@@ -17,6 +17,5 @@ const sort = numbers => {
   return sort(left).concat([pivot], sort(right));
 };
 
-let a = [2, 22, 556, 12, 15, 2, 52, 22];
 
 console.log(sort(a));
