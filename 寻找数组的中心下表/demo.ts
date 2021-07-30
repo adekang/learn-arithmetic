@@ -1,6 +1,6 @@
 // 中心下标是数组的一个下标，其左侧所有元素相加的和等于右侧所有元素相加的和。
 
-function pivotIndex(arr: number[]) {
+function pivotIndex(arr: number[]): number {
 	let sum = arr.reduce((sum, curr) => {
 		return curr + sum
 	}, 0)
