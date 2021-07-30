@@ -17,5 +17,5 @@ const sort = numbers => {
   return sort(left).concat([pivot], sort(right));
 };
 
-
 console.log(sort(a));
+

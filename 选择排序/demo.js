@@ -15,7 +15,7 @@ let minIndex = numbers => {
 };
 let sort = numbers => {
   for (let i = 0; i < numbers.length - 1; i++) {
-    let index = minIndex(numbers.slice(i)) + i;
+    let index = minIndex(numbers.slice(i)) + i; // 防止下标从0开始
     if (index !== i) {
       swap(numbers, index, i);
     }

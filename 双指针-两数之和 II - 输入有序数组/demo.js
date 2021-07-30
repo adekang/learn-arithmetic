@@ -4,19 +4,21 @@
  * @return {number[]}
  */
 let numbers = [2, 7, 11, 15],
-  target = 9;
+	target = 9
+
 var twoSum = function (numbers, target) {
-  let dp = new Map(),
-    len = numbers.length;
-  for (let i = 0; i < len; i++) {
-    let tmp = target - numbers[i];
-    if (dp.has(tmp)) {
-      return [dp.get(tmp) + 1, i + 1];
-    }
-    dp.set(numbers[i], i);
-  }
-};
+	let dp = new Map(),
+		len = numbers.length
+	for (let i = 0; i < len; i++) {
+		let tmp = target - numbers[i]
+		if (dp.has(tmp)) {
+			return [dp.get(tmp) + 1, i + 1]
+		}
+		// 如果map里面没有，就放入。
+		dp.set(numbers[i], i)
+	}
+}
 
-let a = twoSum(numbers, target);
+let a = twoSum(numbers, target)
 
-console.log(a);
+console.log(a)
