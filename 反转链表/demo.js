@@ -20,3 +20,5 @@ function ReverseList02(head) {
 	head.next = null
 	return new_head
 }
+
+

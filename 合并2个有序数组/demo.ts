@@ -1,10 +1,4 @@
-/**
- *
- * @param A int整型一维数组
- * @param B int整型一维数组
- * @return void
- */
-const merge = (nums1, m, nums2, n) => {
+const merge1 = (nums1, m, nums2, n) => {
 	// 定义三个指针
 	let [p1, p2, k] = [m - 1, n - 1, m + n - 1]
 	// 当p1或p2指向有值
